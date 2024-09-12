@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_997" data-name="Rectangle 997" width="24" height="24" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-帳號">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="帳號" clip-path="url(#clip-帳號)">
+    <g id="Mask_Group_17" data-name="Mask Group 17" clip-path="url(#clip-path)">
+      <path id="会员管理ICO" d="M-18-61A12.013,12.013,0,0,1-6-73,12.014,12.014,0,0,1,6-61,12.015,12.015,0,0,1-6-49,12.014,12.014,0,0,1-18-61Zm2.572,0A9.439,9.439,0,0,0-6-51.572,9.44,9.44,0,0,0,3.428-61,9.439,9.439,0,0,0-6-70.428,9.438,9.438,0,0,0-15.428-61ZM-6-53a7.99,7.99,0,0,1-6.241-3A7.988,7.988,0,0,1-1.014-57.251,8.016,8.016,0,0,1,.239-56a7.978,7.978,0,0,1-6.234,3Zm-4-10.994a4,4,0,0,1,4-4A4,4,0,0,1-2-64a4,4,0,0,1-4,4V-60A4,4,0,0,1-10-63.993Z" transform="translate(18 73.001)" fill="#646464"/>
+    </g>
+  </g>
+</svg>

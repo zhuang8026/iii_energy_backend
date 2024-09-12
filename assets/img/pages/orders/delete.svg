@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_948" data-name="Rectangle 948" width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="刪除" clip-path="url(#clip-path)">
+    <g id="刪除-2" data-name="刪除" clip-path="url(#clip-path)">
+      <g id="Group_25744" data-name="Group 25744">
+        <g id="trash" transform="translate(4.496 2.471)">
+          <path id="Path_30547" data-name="Path 30547" d="M61.639,2.322H58.447V1.741A1.741,1.741,0,0,0,56.706,0H54.384a1.741,1.741,0,0,0-1.741,1.741v.581H49.451A1.451,1.451,0,0,0,48,3.771V4.933a.581.581,0,0,0,.581.581H62.51a.581.581,0,0,0,.581-.581V3.771a1.451,1.451,0,0,0-1.451-1.45ZM53.8,1.741a.581.581,0,0,1,.581-.581h2.322a.581.581,0,0,1,.581.581v.581H53.8Z" transform="translate(-48)" fill="#353940"/>
+          <path id="Path_30548" data-name="Path 30548" d="M73.546,184a.181.181,0,0,0-.181.19l.479,10.049a1.739,1.739,0,0,0,1.739,1.657H84.4a1.739,1.739,0,0,0,1.739-1.657l.479-10.049a.181.181,0,0,0-.181-.19Zm8.765,1.451a.581.581,0,0,1,1.161,0v7.543a.581.581,0,0,1-1.161,0Zm-2.9,0a.581.581,0,0,1,1.161,0v7.543a.581.581,0,0,1-1.161,0Zm-2.9,0a.581.581,0,0,1,1.161,0v7.543a.581.581,0,0,1-1.161,0Z" transform="translate(-72.444 -177.326)" fill="#353940"/>
+        </g>
+        <rect id="Rectangle_1010" data-name="Rectangle 1010" width="24" height="24" fill="#fff" opacity="0"/>
+      </g>
+    </g>
+  </g>
+</svg>

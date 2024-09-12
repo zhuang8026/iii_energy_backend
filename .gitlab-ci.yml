@@ -1,0 +1,58 @@
+stages:
+  - deploy
+
+.build_script: &build_script |
+  . /usr/local/nvm/nvm.sh
+  nvm use v12.13.0
+  npm install
+  npm run build:${TARGET_ENV}
+
+.deploy_script: &deploy_script |
+  chmod 600 /home/gitlab-runner/.ssh/id_rsa && chown gitlab-runner /home/gitlab-runner/.ssh/id_rsa
+  (for SERVER in $TARGET_SERVERS;
+  do
+    ssh -p ${SSH_PORT} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null wonder4studio@${SERVER} mkdir -p ${DEPLOY_PATH}/${TARGET_ENV};
+    rsync -av --delete -e "ssh -p ${SSH_PORT} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./dist/* wonder4studio@${SERVER}:${DEPLOY_PATH}/${TARGET_ENV};
+    rsync -av --delete -e "ssh -p ${SSH_PORT} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./deploy-files/nginx-web.conf wonder4studio@${SERVER}:/etc/nginx/auto-generate-config/${PROJECT_DOMAIN};
+    ssh -p ${SSH_PORT} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null wonder4studio@${SERVER} "sudo nginx -t && sudo service nginx reload";
+  done);
+
+deploy_develop:
+  stage: deploy
+  script:
+    - export TARGET_ENV='develop'
+    - export TARGET_SERVERS=$DEPLOY_AWS_HOST
+    - export SSH_PORT=$DEPLOY_AWS_HOST_PORT
+    - export DEPLOY_PATH="/var/www/Energy_Backend"
+    - export PROJECT_DOMAIN=energy-backend-dev.wonder4studio.com
+    - export GIT_SSL_NO_VERIFY=1
+    - git clone https://deploy:H3sSykqoL2yMG7v7iMSG@git.wonder4studio.com/sre/deploy-files.git
+    - sed -i "s|{DEPLOY_PATH}|$DEPLOY_PATH|g" ./deploy-files/nginx-web.conf
+    - sed -i "s|{TARGET_ENV}|$TARGET_ENV|g" ./deploy-files/nginx-web.conf
+    - sed -i "s|{PROJECT_DOMAIN}|$PROJECT_DOMAIN|g" ./deploy-files/nginx-web.conf
+    - *build_script
+    - *deploy_script
+  environment:
+    name: develop
+  only:
+    - develop
+
+deploy_production:
+  stage: deploy
+  script:
+    - export TARGET_ENV='stage'
+    - export TARGET_SERVERS=$DEPLOY_AWS_HOST
+    - export SSH_PORT=$DEPLOY_AWS_HOST_PORT
+    - export DEPLOY_PATH="/var/www/Energy_Backend"
+    - export PROJECT_DOMAIN=energy-backend.wonder4studio.com
+    - export GIT_SSL_NO_VERIFY=1
+    - git clone https://deploy:H3sSykqoL2yMG7v7iMSG@git.wonder4studio.com/sre/deploy-files.git
+    - sed -i "s|{DEPLOY_PATH}|$DEPLOY_PATH|g" ./deploy-files/nginx-web.conf
+    - sed -i "s|{TARGET_ENV}|$TARGET_ENV|g" ./deploy-files/nginx-web.conf
+    - sed -i "s|{PROJECT_DOMAIN}|$PROJECT_DOMAIN|g" ./deploy-files/nginx-web.conf
+    - *build_script
+    - *deploy_script
+  environment:
+    name: stage
+  only:
+    - master

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="117" viewBox="0 0 90 117">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1426" data-name="Rectangle 1426" width="90" height="117" rx="9" transform="translate(1.124 0.084)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="區間用電統計" transform="translate(-1.124 -0.084)" clip-path="url(#clip-path)">
+    <g id="Group_27189" data-name="Group 27189" transform="translate(-16.853)">
+      <g id="surface1" transform="translate(16.894)">
+        <path id="Path_31233" data-name="Path 31233" d="M59.192,20.141V0H11.744A11.3,11.3,0,0,0,.5,11.213v94.34a11.3,11.3,0,0,0,11.244,11.213H79.457A11.3,11.3,0,0,0,90.7,105.553v-72.5H72.135A12.913,12.913,0,0,1,59.192,20.141Z" transform="translate(-0.5)" fill="#ffba31"/>
+        <path id="Path_31234" data-name="Path 31234" d="M287,39.368h14.167L279.527,16.66V31.924A7.431,7.431,0,0,0,287,39.368Zm0,0" transform="translate(-214.703 -12.861)" fill="#ffba31"/>
+      </g>
+    </g>
+    <g id="alert-triangle" transform="translate(13.321 41.465)">
+      <path id="Path_31236" data-name="Path 31236" d="M31.82-.1A8.844,8.844,0,0,1,39.339,4.13L63.886,45.109a8.794,8.794,0,0,1-7.495,13.233H7.282A8.794,8.794,0,0,1-.27,45.15L24.293,4.145A8.851,8.851,0,0,1,31.82-.1ZM7.315,52.342H56.358a2.794,2.794,0,0,0,2.356-4.191L34.2,7.228a2.794,2.794,0,0,0-4.769.014L4.9,48.192a2.795,2.795,0,0,0,2.413,4.15Z" transform="translate(0)" fill="#fff"/>
+      <path id="Line_353" data-name="Line 353" d="M0,15.088a3.5,3.5,0,0,1-3.5-3.5V0A3.5,3.5,0,0,1,0-3.5,3.5,3.5,0,0,1,3.5,0V11.588A3.5,3.5,0,0,1,0,15.088Z" transform="translate(31.82 20.577)" fill="#fff"/>
+      <path id="Line_354" data-name="Line 354" d="M.029,3.5A3.512,3.512,0,0,1-3.486,0,3.488,3.488,0,0,1,0-3.5H.029A3.5,3.5,0,0,1,3.529,0,3.5,3.5,0,0,1,.029,3.5Z" transform="translate(31.82 43.754)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

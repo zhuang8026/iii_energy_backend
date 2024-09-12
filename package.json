@@ -1,0 +1,57 @@
+{
+  "name": "taipowertrackbackend",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env BASE=runtime nuxt --hostname 0.0.0.0 --port 8001",
+    "build:develop": "cross-env BASE=develop nuxt build",
+    "build:stage": "cross-env BASE=stage nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lintFix": "eslint --fix . --ext .js,.vue"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint",
+    "*.{css,vue}": "stylelint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "core-js": "^3.8.3",
+    "dayjs": "^1.10.4",
+    "echarts": "^5.0.2",
+    "element-ui": "^2.15.0",
+    "nuxt": "^2.14.12",
+    "qs": "^6.9.6",
+    "vuex-persistedstate": "^4.0.0-beta.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/stylelint-module": "^4.0.0",
+    "@nuxtjs/workbox": "^3.0.0-beta.16",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.5.0",
+    "eslint-plugin-vuefix": "^0.2.1",
+    "node-sass": "^5.0.0",
+    "postcss-pxtorem": "^5.1.1",
+    "sass-loader": "^10.1.1",
+    "stylelint": "^13.9.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
+  }
+}

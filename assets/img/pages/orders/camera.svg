@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_997" data-name="Rectangle 997" width="24" height="24" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-拍照上傳">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="拍照上傳" clip-path="url(#clip-拍照上傳)">
+    <g id="Mask_Group_18" data-name="Mask Group 18" clip-path="url(#clip-path)">
+      <g id="Icon_material-photo-camera" data-name="Icon material-photo-camera" transform="translate(-2 -0.9)">
+        <path id="Path_31019" data-name="Path 31019" d="M20.24,16.72a3.52,3.52,0,1,1-3.52-3.52A3.52,3.52,0,0,1,20.24,16.72Z" transform="translate(-2.72 -2.72)" fill="#fff"/>
+        <path id="Path_31020" data-name="Path 31020" d="M10.7,3,8.687,5.2H5.2A2.206,2.206,0,0,0,3,7.4V20.6a2.206,2.206,0,0,0,2.2,2.2H22.8A2.206,2.206,0,0,0,25,20.6V7.4a2.206,2.206,0,0,0-2.2-2.2H19.313L17.3,3ZM14,19.5A5.5,5.5,0,1,1,19.5,14,5.5,5.5,0,0,1,14,19.5Z" transform="translate(0 0)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
